@@ -1,1 +1,164 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+	margin: 0;
+	font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.025em;
+  line-height: 1.666;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: bold !important;
+  line-height: 1.2; }
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: bold !important;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: bold !important;
+}
+
+h4 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold !important;
+  font-size: 1rem;
+}
+
+.mat-button {
+  font-family: "Roboto Mono", monospace;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+/* COLORS */
+.blue {
+  color: #32edff;
+}
+
+.red {
+  color: #ff6868;
+}
+
+.purple {
+  color: #eca6fc;
+}
+
+.white {
+  color: #FFF;
+}
+
+.yellow {
+  color: #F2B92F;
+}
+
+.green {
+  color: #69f0ae;
+}
+
+.green-money {
+  color: #30A247;
+}
+
+.blue-navy {
+  color: #000079;
+}
+
+.blue-happy {
+  color: #1E72B5;
+}
+
+.pink {
+  color: #F7B2AB;
+}
+
+
+/* GLOBAL STYLES FOR MATERIAL COMPONENTS */
+.mat-snack-bar-container.error{
+  background-color: #f44336;
+  color: #FFF;
+}
+
+.mat-snack-bar-container.success{
+  background-color: #69f0ae;
+  color: rgba(0,0,0,.87);
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sticky-progress-bar {
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 0;
+}
+
+
+.spinner-center {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+/*
+* Custom main menu accordion
+*/
+#arwiki-main-menu-accordion .mat-expansion-panel-body,
+#arwiki-home-page-accordion .mat-expansion-panel-body{
+  padding: 0 0 16px;
+}
+#arwiki-main-menu-accordion .mat-expansion-panel:not([class*=mat-elevation-z]),
+#arwiki-home-page-accordion .mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.mini-text, .mini-text a.mat-button {
+  font-size: 12px !important;
+}

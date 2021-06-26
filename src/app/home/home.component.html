@@ -1,0 +1,20 @@
+<div class="main-container">
+	<div class="bg-grid">
+		<div class="row-hive" *ngFor="let gridRow of gridImages; index as i" [class.row-hive-mleft]="i % 2">
+			<div 
+				*ngFor="let gi of gridRow" 
+				class="hexagon col-hive" 
+				[ngStyle]="{'background-image': 'url(' + gi + ')', 'background-size': 'cover'}">
+			</div>
+		</div>
+	</div>
+	<h1 class="main-title text-center">
+		<sup>my</sup><span>ArWiki</span>
+	</h1>
+	<p class="text-center">
+		Your decentralized WiKi on the permaweb.
+	</p>
+	<div class="secondary-actions text-center">
+  	<button class="btn-start" mat-flat-button color="primary">Start now</button>
+	</div>
+</div>

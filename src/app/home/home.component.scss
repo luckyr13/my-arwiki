@@ -1,0 +1,151 @@
+$main-container-height: 120%;
+$main-title-height: 70px;
+
+.main-container {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: $main-container-height;
+  background-color: #FFF;
+  background: linear-gradient(#FFF, #CCC);
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+.main-title {
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	z-index: 10;
+	line-height: $main-title-height;
+	background-color: #000;
+	box-shadow: 6px 6px 6px #000;
+}
+.main-title sup {
+	font-size: 28px;
+	line-height: $main-title-height;
+
+
+}
+.main-title span {
+	font-size: 52px;
+	line-height: $main-title-height;
+}
+.main-container p {
+	z-index: 10;
+	font-size: 32px;
+	background-color: #FFF;
+	width: 260px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 4px #000 solid;
+	border-style: dashed ;
+	color: #000;
+	box-shadow: 6px 6px 6px #000;
+}
+.secondary-actions {
+	margin-top: 40px;
+}
+.bg-grid {
+	position: absolute;
+	width: 100%;
+	height: $main-container-height;
+	z-index: 0;
+	padding: 0px;
+	overflow: hidden;
+	margin-top: -80px;
+}
+.clear {
+	clear: both;
+}
+.bg-grid .row-hive {
+	padding: 0px;
+	height: 160px;
+	min-width: 150%;
+	overflow: hidden;
+}
+.bg-grid .col-hive {
+	padding: 0px;
+	margin: 0px;
+	height: 160px;
+	width: 150px;
+  display: inline-block;
+	overflow: hidden;
+	margin-left: 12px;
+}
+.bg-grid .row-hive-mleft {
+	margin-left: -80px;
+	margin-top: -32px;
+	margin-bottom: -32px;
+}
+.hexagon {
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* md */
+@media (min-width: 768px) {
+	.bg-grid .row-hive {
+		height: 160px;
+	}
+	.bg-grid .col-hive  {
+		width: 150px;
+		height: 160px;
+	}
+}
+/* lg */
+@media (min-width: 992px) {
+	.bg-grid .row-hive-mleft {
+	}
+	.bg-grid .row-hive {
+		height: 170px;
+	}
+	.bg-grid .row-hive-mleft {
+		margin-left: -86px;
+		margin-top: -32px;
+		margin-bottom: -32px;
+	}
+	.bg-grid .col-hive {
+		width: 160px;
+		height: 170px;
+	}
+	.main-container p {
+		width: 600px;
+	}
+	.main-title {
+		width: 400px;
+	}
+	.main-title sup {
+		font-size: 32px;
+
+	}
+	.main-title span {
+		font-size: 62px;
+
+	}
+}
+/* xl */
+@media (min-width: 1600px) {
+	.bg-grid .row-hive-mleft {
+		margin-left: -162px;
+		margin-top: -62px;
+		margin-bottom: -62px;
+	}
+	.bg-grid .row-hive {
+		height: 330px;
+	}
+	.bg-grid .col-hive {
+		width: 300px;
+		height: 330px;
+		margin-left: 24px;
+	}
+}
+.btn-start {
+	padding: 10px;
+	font-family: "Roboto Mono", monospace;
+	background-color: #000;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 22px;
+	box-shadow: 4px 4px 4px #000;
+}
