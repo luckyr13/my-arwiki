@@ -2,6 +2,7 @@
 	<div class="bg-grid">
 		<div class="row-hive" *ngFor="let gridRow of gridImages; index as i" [class.row-hive-mleft]="i % 2">
 			<div 
+				matRipple 
 				*ngFor="let gi of gridRow" 
 				class="hexagon col-hive" 
 				[ngStyle]="{'background-image': 'url(' + gi + ')', 'background-size': 'cover'}">
