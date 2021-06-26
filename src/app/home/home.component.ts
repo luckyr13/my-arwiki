@@ -51,6 +51,7 @@ export class HomeComponent implements OnInit {
 		]
 			
 	];
+	rippleColor: string = 'white';
 
   constructor() { }
 
