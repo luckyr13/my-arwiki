@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import {MatRippleModule} from '@angular/material/core';
-
-
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [],
@@ -12,7 +11,8 @@ import {MatRippleModule} from '@angular/material/core';
   ],
   exports: [
     MatButtonModule,
-    MatRippleModule
+    MatRippleModule,
+    MatIconModule
   ]
 })
 export class SharedModule { }
