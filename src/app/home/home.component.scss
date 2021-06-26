@@ -73,6 +73,10 @@ $main-title-height: 70px;
   display: inline-block;
 	overflow: hidden;
 	margin-left: 12px;
+	cursor: zoom-in;
+}
+.bg-grid .col-hive:hover {
+	opacity: 0.7;
 }
 .bg-grid .row-hive-mleft {
 	margin-left: -80px;
